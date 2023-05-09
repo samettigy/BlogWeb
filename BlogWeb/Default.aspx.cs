@@ -14,6 +14,13 @@ namespace BlogWeb
             DataSet1TableAdapters.TBLHAKKIMDATableAdapter dt = new DataSet1TableAdapters.TBLHAKKIMDATableAdapter();
             Repeater1.DataSource = dt.HakkimdaListele();
             Repeater1.DataBind();
+
+
+            DataSet1TableAdapters.TBLDENEYIMTableAdapter dt2 = new DataSet1TableAdapters.TBLDENEYIMTableAdapter();
+            Repeater2.DataSource = dt2.DeneyimListesi();
+            Repeater2.DataBind();
+
+
         }
     }
 }
