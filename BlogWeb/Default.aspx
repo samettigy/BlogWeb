@@ -141,7 +141,8 @@
         <hr class="m-0">
 
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-            <h2 class="mb-5">EĞİTİM HAYATIM </h2>
+            <h2 class="mb-5">EĞİTİM HAYATIM</h2>
+
             <asp:Repeater ID="Repeater3" runat="server">
                 <ItemTemplate>
                     <div class="my-auto">
