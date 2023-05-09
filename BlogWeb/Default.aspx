@@ -146,7 +146,6 @@
                 <ItemTemplate>
                     <div class="my-auto">
                         
-
                         <div class="resume-item d-flex flex-column flex-md-row mb-5">
                             <div class="resume-content mr-auto">
                                 <h3 class="mb-0">
