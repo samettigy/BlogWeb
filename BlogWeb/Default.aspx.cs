@@ -16,9 +16,26 @@ namespace BlogWeb
             Repeater1.DataBind();
 
 
+
             DataSet1TableAdapters.TBLDENEYIMTableAdapter dt2 = new DataSet1TableAdapters.TBLDENEYIMTableAdapter();
             Repeater2.DataSource = dt2.DeneyimListesi();
             Repeater2.DataBind();
+
+
+
+            DataSet1TableAdapters.TBLEGITIMTableAdapter dt3 = new DataSet1TableAdapters.TBLEGITIMTableAdapter();
+            Repeater3.DataSource = dt3.EgitimListesi();
+            Repeater3.DataBind();
+
+
+
+
+
+
+
+
+
+
 
 
         }
