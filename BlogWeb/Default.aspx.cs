@@ -29,14 +29,21 @@ namespace BlogWeb
 
 
 
+            DataSet1TableAdapters.TBLHOBILERTableAdapter dt4 = new DataSet1TableAdapters.TBLHOBILERTableAdapter();
+            Repeater5.DataSource = dt4.HobiListesi();
+            Repeater5.DataBind();
 
 
 
+            DataSet1TableAdapters.TBLSERTIFIKALARTableAdapter dt5 = new DataSet1TableAdapters.TBLSERTIFIKALARTableAdapter();
+            Repeater4.DataSource = dt5.SertifikaListesi();
+            Repeater4.DataBind();
 
 
 
-
-
+            DataSet1TableAdapters.TBLYETENEKLERTableAdapter dt6 = new DataSet1TableAdapters.TBLYETENEKLERTableAdapter();
+            Repeater6.DataSource = dt6.YetenekListesi();
+            Repeater6.DataBind();
 
         }
     }

@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Resume - Start Bootstrap Theme</title>
+    <title>WEB BLOG 2023</title>
 
     <!-- Bootstrap core CSS -->
     <link href="Dosyalar/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -146,7 +146,7 @@
             <asp:Repeater ID="Repeater3" runat="server">
                 <ItemTemplate>
                     <div class="my-auto">
-                        
+
                         <div class="resume-item d-flex flex-column flex-md-row mb-5">
                             <div class="resume-content mr-auto">
                                 <h3 class="mb-0">
@@ -175,9 +175,9 @@
 
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
             <div class="my-auto">
-                <h2 class="mb-5">Skills</h2>
+                <h2 class="mb-5">BECERİLER</h2>
 
-                <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+                <div class="subheading mb-3">PROGRAMLAMA DİLLERİ</div>
                 <ul class="list-inline dev-icons">
                     <li class="list-inline-item">
                         <i class="fab fa-html5"></i>
@@ -217,68 +217,50 @@
                     </li>
                 </ul>
 
-                <div class="subheading mb-3">Workflow</div>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Mobile-First, Responsive Design</li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Cross Browser Testing &amp; Debugging</li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Cross Functional Teams</li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Agile Development &amp; Scrum</li>
-                </ul>
+                <div class="subheading mb-3">İŞ AKIŞI</div>
+                <asp:Repeater ID="Repeater6" runat="server">
+                    <ItemTemplate>
+                        <ul class="fa-ul mb-0">
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                <asp:Label ID="Label18" runat="server" Text='<%# Eval("YETENEK") %>'></asp:Label></li>
+                        </ul>
+                    </ItemTemplate>
+                </asp:Repeater>
             </div>
         </section>
 
         <hr class="m-0">
 
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-            <div class="my-auto">
-                <h2 class="mb-5">Interests</h2>
-                <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
-            </div>
+            <h2 class="mb-5">HOBİLERİM</h2>
+            <asp:Repeater ID="Repeater5" runat="server">
+                <ItemTemplate>
+                    <div class="my-auto">
+                        <p>
+                            <asp:Label ID="Label16" runat="server" Text='<%# Eval("HOBI") %>'></asp:Label>
+                        </p>
+                    </div>
+                </ItemTemplate>
+            </asp:Repeater>
         </section>
 
         <hr class="m-0">
 
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-            <div class="my-auto">
-                <h2 class="mb-5">Awards &amp; Certifications</h2>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        Google Analytics Certified Developer</li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        Mobile Web Specialist - Google Certification</li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        1<sup>st</sup>
-                        Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        1<sup>st</sup>
-                        Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        2<sup>nd</sup>
-                        Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        1<sup>st</sup>
-                        Place - James Buchanan High School - Hackathon 2006</li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        3<sup>rd</sup>
-                        Place - James Buchanan High School - Hackathon 2005</li>
-                </ul>
-            </div>
+            <h2 class="mb-5">SERTİFİKALAR</h2>
+            <asp:Repeater ID="Repeater4" runat="server">
+                <ItemTemplate>
+                    <div class="my-auto">
+
+                        <ul class="fa-ul mb-0">
+                            <li>
+                                <i class="fa-li fa fa-trophy text-warning"></i>
+                                <asp:Label ID="Label17" runat="server" Text='<%# Eval("SERTIFIKALAR") %>'></asp:Label></li>
+                        </ul>
+                    </div>
+                </ItemTemplate>
+            </asp:Repeater>
         </section>
 
     </div>
